@@ -14,6 +14,7 @@
             <params/>
             <throws/>
             <body>
+                <comment xml:space="preserve">The goal of the Seahorse is to avoid being eaten by both the Crab cpu and the other player controlling the Lobster.</comment>
                 <call expression="move(4)" expression-java="move(4)" enable="true"/>
                 <if condition="Greenfoot.isKeyDown(&quot;left&quot;)" condition-java="Greenfoot.isKeyDown(&quot;left&quot;)" enable="true">
                     <ifStatements>

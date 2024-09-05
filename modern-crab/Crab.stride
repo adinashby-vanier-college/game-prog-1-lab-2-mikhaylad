@@ -15,11 +15,13 @@
             <throws/>
             <body>
                 <call expression="move(4)" expression-java="move(4)" enable="true"/>
+                <comment xml:space="preserve">Crab will move towards to edge and then turn right at a random angle (0 to 180 degrees).</comment>
                 <if condition="isAtEdge()" condition-java="isAtEdge()" enable="true">
                     <ifStatements>
                         <call expression="turn(Greenfoot.getRandomNumber(180))" expression-java="turn(Greenfoot.getRandomNumber(180))" enable="true"/>
                     </ifStatements>
                 </if>
+                <comment xml:space="preserve">If the Crab manages to touch either player, Seahorse or Lobster, the touched player will die and be removed from the game.</comment>
                 <call expression="removeTouching(Seahorse.class)" expression-java="removeTouching(Seahorse.class)" enable="true"/>
                 <call expression="removeTouching(Lobster.class)" expression-java="removeTouching(Lobster.class)" enable="true"/>
             </body>

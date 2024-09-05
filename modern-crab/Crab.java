@@ -16,9 +16,11 @@ public class Crab extends Actor
     public void act()
     {
         move(4);
+        /* Crab will move towards to edge and then turn right at a random angle (0 to 180 degrees).*/
         if (isAtEdge()) {
             turn(Greenfoot.getRandomNumber(180));
         }
+        /* If the Crab manages to touch either player, Seahorse or Lobster, the touched player will die and be removed from the game.*/
         removeTouching(Seahorse.class);
         removeTouching(Lobster.class);
     }

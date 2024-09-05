@@ -14,6 +14,7 @@ public class Seahorse extends Actor
      */
     public void act()
     {
+        /* The goal of the Seahorse is to avoid being eaten by both the Crab cpu and the other player controlling the Lobster.*/
         move(4);
         if (Greenfoot.isKeyDown("left")) {
             turn(-3);

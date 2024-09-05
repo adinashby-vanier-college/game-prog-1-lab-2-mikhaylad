@@ -14,6 +14,7 @@
             <params/>
             <throws/>
             <body>
+                <comment xml:space="preserve">The goal of the Lobster is to eat the Seahorse before the Crab, while also avoiding contact with the Crab.</comment>
                 <call expression="move(4)" expression-java="move(4)" enable="true"/>
                 <if condition="Greenfoot.isKeyDown(&quot;a&quot;)" condition-java="Greenfoot.isKeyDown(&quot;a&quot;)" enable="true">
                     <ifStatements>
@@ -25,6 +26,7 @@
                         <call expression="turn(3)" expression-java="turn(3)" enable="true"/>
                     </ifStatements>
                 </if>
+                <comment xml:space="preserve">If the Lobster comes in contact with the Seahorse, it eats it and the Seahorse "dies" and is removed from the game.</comment>
                 <call expression="removeTouching(Seahorse.class)" expression-java="removeTouching(Seahorse.class)" enable="true"/>
             </body>
         </method>
