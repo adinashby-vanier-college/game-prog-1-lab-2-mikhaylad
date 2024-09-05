@@ -15,5 +15,11 @@ public class Crab extends Actor
      */
     public void act()
     {
+        move(4);
+        if (isAtEdge()) {
+            turn(Greenfoot.getRandomNumber(180));
+        }
+        removeTouching(Seahorse.class);
+        removeTouching(Lobster.class);
     }
 }
